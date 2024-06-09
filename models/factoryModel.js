@@ -17,3 +17,7 @@ const shiftSchema = new mongoose.Schema({
     startingHour: Number,
     endingHour: Number
 })
+
+const model = mongoose.model("employee", employeeSchema, "department", departmentSchema, "shift", shiftSchema)
+
+module.exports = model
